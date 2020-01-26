@@ -15,8 +15,8 @@ run post call like this:
 
 you should see the output in the console container logs
 
-Demo server is down and up again steps:
-
+# Demo server is down and up again steps:
+in case the server is down we add a few messages and then the server runs again it should print them
 remove the console container :
 ```
 docker container rm  console
