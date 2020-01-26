@@ -14,3 +14,23 @@ run post call like this:
 curl -d time=12 -d msg="Hello World"  http://localhost:5000/echo
 
 you should see the output in the console container logs
+
+Demo server is down and up again steps:
+
+remove the console container :
+```
+docker container rm  console
+```
+post a few messages :
+
+```
+curl -d time=12 -d msg="Hello World"  http://localhost:5000/echo
+```
+
+run console container :
+(for demo purposes will call it console2)
+```
+docker run --net my_app --name console2 docker-printer:1.0 
+```
+
+you should see the messages printed on console2 logs
