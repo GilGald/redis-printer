@@ -11,7 +11,7 @@ docker run --net my_app --name console docker-printer:1.0
 
 ```
 run post call like this:
-curl -d time=12 -d msg="Hello World"  http://localhost:5000/echo
+```curl -d time=12 -d msg="Hello World"  http://localhost:5000/echo```
 
 you should see the output in the console container logs
 
