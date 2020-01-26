@@ -1,4 +1,4 @@
-#!/home/gil/PycharmProjects/ExcelServer/venv/bin/python
+#!/home/gil/PycharmProjects/redis-printer/venv/bin/python
 
 # -*- coding: utf-8 -*-
 import re

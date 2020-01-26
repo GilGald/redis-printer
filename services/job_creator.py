@@ -19,7 +19,7 @@ class JobCreator(object):
         # Delay the item.
 
         else:
-            conn.rpush(Consts.wrap_with_queue(queue_name), item)
+            conn.rpush(queue_name, item)
             # Execute the item immediately.
 
         return identifier

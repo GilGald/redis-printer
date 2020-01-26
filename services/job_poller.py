@@ -16,7 +16,6 @@ class JobPoller(object):
         end = time.time() + acquire_timeout
         while time.time() < end:
             if conn.setnx('lock:' + lockname, identifier):
-                print(f"lock name {lockname}")
                 return identifier
 
             time.sleep(.001)

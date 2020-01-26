@@ -14,4 +14,4 @@ class PrinterQueueWorker(object):
                 continue
 
             _, _, data = json.loads(item[1])
-            print(f"from worker {worker_name} message: {data['msg']} ")
+            print(data['msg'])
